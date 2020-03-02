@@ -1,7 +1,5 @@
 use crate::entities;
 
-pub fn createTodoList(name: String) -> entities::TodoList {
-    let mut todolist = entities::TodoList { todos: Vec::new() };
-    todolist.setName(name);
-    todolist;
+pub fn create_todo_list(name: String) -> entities::TodoList {
+    entities::TodoList { todos: Vec::new(), name }
 }

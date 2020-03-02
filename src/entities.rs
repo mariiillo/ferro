@@ -1,15 +1,9 @@
 pub struct TodoList {
-    todos: Vec<Todo>,
-    name: String,
+    pub todos: Vec<Todo>,
+    pub name: String,
 }
 
-impl TodoList {
-    pub fn set_name(&mut self, name: String) {
-        self.name = name
-    }
-}
-
-struct Todo {
+pub struct Todo {
     description: String,
     completed: bool,
 }
